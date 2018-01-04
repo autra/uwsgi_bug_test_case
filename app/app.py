@@ -1,11 +1,6 @@
-# Flask app
-
 import flask
-import flask_bootstrap
 
 app = flask.Flask(__name__)
-# Setup bootstrap
-flask_bootstrap.Bootstrap(app)
 
 def foo():
     print('executing foo')

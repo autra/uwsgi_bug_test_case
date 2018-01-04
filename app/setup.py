@@ -6,7 +6,6 @@ here = os.path.abspath(os.path.dirname(__file__))
 requirements = (
     'flask==0.11.1',
     'uwsgi==2.0.15',
-    'Flask-Bootstrap==3.3.7.1'
 )
 
 setup(

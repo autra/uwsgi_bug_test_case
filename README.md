@@ -14,4 +14,6 @@ Working case: `./venv/bin/uwsgi  --yaml ./uwsgi.yml`
 
 bug: `/venv/bin/uwsgi --yaml ./uwsgi_bug.yml`
 
+If you use the flask cli, it works.
+
 make request against the `/test` route.
