@@ -1,0 +1,22 @@
+uwsgi:
+    virtualenv: /home/augustin/workspace/love/testcase/venv
+    master: true
+
+    # NOT WORKING
+    socket: /tmp/app.sock
+    chmod-socket: 666
+
+    # WORKING
+    #http: :9000
+
+    mount: /=app.app:app
+    manage-script-name: true
+    processes: 2
+    enable-threads: true
+    protocol: uwsgi
+    need-app: true
+    catch-exceptions: true
+    #    close-on-exec: true
+    #    lazy: true
+    lazy-apps: true
+    py-auto-reload: 1
